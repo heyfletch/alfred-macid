@@ -1,7 +1,31 @@
-alfred-knocktounlock
+alfred-macid
 ====================
 
-Alfred workflow for the Knocktounlock App (Knock App)
+Alfred workflow for the MacID app
+
+NOTE: This is still completely configured for the Knock app as forked from @saschaeggi. I have not changed any code here yet.
+
+After installing, edit the Alfred Workflow applescript and just replace:
+
+```
+on alfred_script(q)
+
+  do shell script "open knock://lock"
+end alfred_script
+
+```
+
+With 
+
+```
+
+on alfred_script(q)
+  do shell script "open macid://lock"
+end alfred_script
+
+```
+
+And it will work MacID to lock your Mac with Alfred. 
 
 Download: https://github.com/saschaeggi/alfred-knocktounlock/raw/master/Knocktounlock%20App.alfredworkflow
 
